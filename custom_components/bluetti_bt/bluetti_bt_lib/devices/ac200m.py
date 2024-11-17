@@ -13,10 +13,10 @@ class AC200M(ProtocolV1Device):
 
         # Details
         self.struct.add_enum_field("ac_output_mode", 70, OutputMode)
-        self.struct.add_decimal_field("internal_ac_voltage", 71, 1)
+        self.struct.add_decimal_field("internal_ac_voltage", 71, 1, multiplier=10) # Karatzie alt 71,1) 
         self.struct.add_decimal_field("internal_current_one", 72, 1)
         self.struct.add_uint_field("internal_power_one", 73)
-        self.struct.add_decimal_field("internal_ac_frequency", 74, 2)
+        self.struct.add_decimal_field("internal_ac_frequency", 74, 2, multiplier=10)  # Karatzie alt 74,2) 
         self.struct.add_uint_field("internal_dc_input_voltage", 86)
         self.struct.add_decimal_field("internal_dc_input_power", 87, 1)
         self.struct.add_decimal_field("internal_dc_input_current", 88, 2)
