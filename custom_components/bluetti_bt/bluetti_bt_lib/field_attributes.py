@@ -349,8 +349,14 @@ def PACK_FIELD_ATTRIBUTES(pack: int):
             device_class="battery",
             state_class="measurement",
         ),
-        "pack_bms_version": FieldAttributes(
-            type=FieldType.NUMERIC,
-            name=f"Battery Pack {pack} BMS Version",
-        ),
+#   BMS Version does not work
+
+#        "pack_bms_version": FieldAttributes(
+#            type=FieldType.NUMERIC,
+#            name=f"Battery Pack {pack} BMS Version",
+#        ),
+#        "cell_voltages": VoltageFieldAttributes(
+#            type=FieldType.NUMERIC,
+#            name=f"Battery Pack {pack} Zell 1 Voltage",
+#        ),	
     }
