@@ -140,7 +140,6 @@ FIELD_ATTRIBUTES: dict[str, FieldAttributes] = {
         unit_of_measurement="%",
         device_class="battery",
         state_class="measurement",
-        force_update=True, # Karatzie force_update 
     ),
     "total_battery_voltage": VoltageFieldAttributes("Total Battery Voltage"),
     "ac_output_on": OutletFieldAttributes("AC Output"),
